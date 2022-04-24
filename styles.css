@@ -1,0 +1,56 @@
+/*
+1. Posicionamiento
+2. Modelo de caja (box model)
+3. Tipografia
+4. Visuales
+5. otros
+*/
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+root {
+    /* colores*/
+    --secondary-blue: #0B5895; ;
+    --just-white: #fff ; 
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+}
+
+.nav-brand {
+    height: 100%;
+    padding: 0px;
+    width: auto;
+}
+button  {
+    position: relative;
+    float: right;
+    overflow: visible;
+    padding: 9px 10px;   
+    padding: 10px;
+    margin: 25px 15px 25px 0;
+    border-radius: 4px;
+    writing-mode: horizontal-tb;
+}
+.nav-static-top { 
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
+    border-bottom: 2px solid rgba(221, 221, 221, 0.82);
+    border-top: 3px solid #3e476d;
+    text-transform: uppercase;
+    color: #6d6d6d ;
+}
+
+.nav-toggle .icon+.icon {
+    margin-top: 4px;
+}
+.nav-toggle .icon {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-image: url(./assets/icons/menu.png);
+}
