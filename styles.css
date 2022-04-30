@@ -20,37 +20,330 @@ root {
     padding: 0;
     text-decoration:none;
 }
-
+body {
+    margin: 0;
+}
 .nav-brand {
     height: 100%;
     padding: 0px;
     width: auto;
 }
-button  {
+.iconmenu   {
     position: relative;
     float: right;
-    overflow: visible;
-    padding: 9px 10px;   
-    padding: 10px;
+    display: block;
+    align-items: center;
+    height: 32px;
+    padding: 10px;  
     margin: 25px 15px 25px 0;
     border-radius: 4px;
     writing-mode: horizontal-tb;
-}
-.nav-static-top { 
+    background: #0B5895;
+    color:#fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}   
+
+.nav-top-main {
     box-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
     border-bottom: 2px solid rgba(221, 221, 221, 0.82);
     border-top: 3px solid #3e476d;
     text-transform: uppercase;
-    color: #6d6d6d ;
+    color: #6d6d6d;
+}
+.nav-header { 
+    height: 84px;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+
 }
 
-.nav-toggle .icon+.icon {
-    margin-top: 4px;
+.nav-brand img {
+    height: 100%;
+    padding: 0px;
+    width: auto;
+    display: flexbox;
 }
-.nav-toggle .icon {
+img {
+    vertical-align: middle;
+    border: 0;
+}
+ .menu__item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
+    margin-left: 10px;
     display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
-    background-image: url(./assets/icons/menu.png);
+    position: relative;
+    background: #088542;
 }
+.container .nav-header {
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: blue;
+}
+.menu__link {
+    display: block;
+    color: #6d6d6d;
+    font-size: 1.0em;
+    text-decoration: none;  
+}
+.menu {
+    margin-top: -100%;
+    width: 100%;
+    transition: all 0.5s;
+    position: relative;
+    display: block;
+    background: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0px;
+    border-top: 1px solid #0B5895;
+    background-color:#1a437a; 
+    color:#fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    display: inline-block;
+}
+.Titulopaginaprincipal h2 {
+    font-size: 30px;
+    font-weight: sans-serif;
+    color: #333333;
+    margin: 20px 0px 10px;
+    text-align: center;
+    display: inline-block;
+}
+.Titulopaginaprincipal h1 {
+    font-size: 20px;
+    font-weight: sans-serif;
+    color: #0B5895;
+    margin: 20px 0px 10px;
+    padding: 0px 0px 20px;
+
+}
+.colorgraph {
+    background:  linear-gradient(200.8deg, #088542 25%,#ec5556 50%,#085f9c 25%);
+    height: 5px;
+    border-radius: 8px;
+    width: 80%; 
+    margin: 0 10% 0 10%;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.panelprimario {
+   
+    border-style: solid;
+    border-color: #0b5895;
+    border-radius: 4px ;
+    width: 70%;
+    border-width: 1px;
+    height: 100%;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.panel-heading { 
+    border-radius: 3px;
+    background:#0b5895;
+    height: 21px;
+    width: 100% ;
+    display: inline-block;
+}
+p {
+    margin: 0px 0px 10px;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    padding: 15px;
+    color: #333333;
+    display: inline-block;
+}
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control {
+    width: 70%;
+    height: 34px;
+    margin: 10px 0px 5px 5px;
+    display: inline-block;
+}
+.panel .panel-primary {
+    height: 380px;
+    width: 70%;
+    display: inline-flex;
+   
+}
+.panel-body{
+    display: inline-block;
+    height: 380px;
+}
+
+#startProcess{
+    width: 80%;
+    height: 34px;
+    background: #085f9c;
+    color: #fff;
+    margin: 10px 0px 0px 5px;
+    border-radius: 4px;
+    border-style:none ;
+    border-top-style: none;
+    display: inline-block;
+}
+.btn-cancel {
+    width: 80%;
+    height: 34px;
+    background:#ec5556;
+    color: #fff;
+    margin: 0px 0px 0px 5px;
+    border-radius: 4px;
+    border-bottom-style: none;
+    border-style:none ;
+    display: inline-block;
+}
+.mostrar {
+    margin-top: 0;
+}
+
+
+
+@media(min-width:789px) {
+.iconmenu { 
+        display: none;
+    }
+
+.menu {
+    margin-top: 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 10px 15px;
+}
+.menu__item {
+    padding: 8px;
+    float:right;
+    align-items: center;
+}
+.nav-header { 
+    height: 84px;
+    display: flex;
+    justify-content:center ;
+    align-items:center ;
+    position: relative;
+    margin: 0; 
+           
+}
+.menu__item :hover {
+    background-color: #e7e7e7;
+}
+.rowprincipal {
+    padding: 0px 15px;
+    background: pink;
+    height: 00px;
+    margin: 0 auto;
+    width: 50%;
+}
+.section  {
+    height: 700px;
+}
+.Titulopaginaprincipal h2 {
+    font-size: 30px;
+    font-weight: sans-serif;
+    color: #333333;
+    margin: 20px 0px 10px;
+    text-align: center;
+}
+.Titulopaginaprincipal h1 {
+    font-size: 20px;
+    font-weight: sans-serif;
+    color: #0B5895;
+    margin: 20px 0px 10px;
+    padding: 0px 0px 20px;
+}
+.colorgraph {
+    background:  linear-gradient(200.8deg, #088542 25%,#ec5556 50%,#085f9c 25%);
+    height: 5px;
+    border-radius: 8px;
+    width: 80%; 
+    margin: 0 10% 0 10%;
+    margin-bottom: 15px;
+}
+.panelprimario {
+   
+    border-style: solid;
+    border-color: #0b5895;
+    border-radius: 4px ;
+    width: 100%;
+    border-width: 1px;
+    height: 420px;
+    display: inline-block;
+}
+
+.panel-heading { 
+    border-radius: 3px;
+    background:#0b5895;
+    height: 21px;
+    width: 100%;
+}
+footer {
+    text-align: center;
+    padding: 5px 0;
+    border-top: 1px solid #0B5895;
+    background-color:#1a437a; 
+    color:#fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+}
+p {
+    margin: 0px 0px 10px;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    padding: 15px;
+    color: #333333;
+}
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control {
+    width: 80%;
+    height: 34px;
+    margin: 10px 0px 5px 5px;
+    display: inline-block;
+}
+.panel panel-primary {
+    height: 380px;
+}
+.panel-body{
+    display: inline-block;
+    height: 380px;
+}
+#startProcess{
+    width: 80%;
+    height: 34px;
+    background: #085f9c;
+    color: #fff;
+    margin: 10px 0px 0px 5px;
+    border-radius: 4px;
+    border-style:none ;
+    border-top-style: none;
+}
+.btn-cancel {
+    width: 80%;
+    height: 34px;
+    background:#ec5556;
+    color: #fff;
+    margin: 0px 0px 0px 5px;
+    border-radius: 4px;
+    border-bottom-style: none;
+    border-style:none ;
+}}
