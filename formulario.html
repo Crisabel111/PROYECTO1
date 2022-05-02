@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secretaría de Educación - Solicitud de cupo escolar</title>
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">   
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./assets/icons/menu.png" sizes="16x16 24x24 36x36 48x48">
+    <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./styles.css">  
+    <script src="https://kit.fontawesome.com/252d0ee970.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-top-main">
+            <nav class="nav-principal-botton">
+                   <div class="nav-header">
+                   <button class="iconmenu" id="menubar"><i class="fa-solid fa-bars"></i></button> 
+                <a class="nav-brand" href="DEMO1.html">
+                    <img src="./assets/img/logo.png" alt="Logo de la Alcaldía ">
+                </a>
+                    <ul class="menu" id="menu">
+                        <li class="menu__item"><a href="#" class="menu__link"><i class="fa-solid fa-house-chimney"></i></a></li>      
+                        <li class="menu__item"><a href="#" class="menu__link">Solicitud de cupo escolar</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Consulta de solicitud</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Ingreso administrador</a></li>
+                     </ul>
+                   </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="rowprincipal" style="text-align:center;">
+                            <img src="./assets/img/logo grande.png" alt="Logo la Alcaldia de Santiago de Cali" height="100px">
+                        </a>
+                    <div class="row">
+                 <div class="Titulopaginaprincipal">
+                     <h1>Formulario de cupo escolar</h1>
+            <div class="panelprimario">
+        <div class="panel panel-primary">
+    <div class="panel-heading"></div>
+<div class="panel-body" style="text-align: justify;">
+    <form class="form-student" id="form-student" role="form" style="text-align: center;">
+        <div class="row">
+            <div class="form-group">
+             <br>
+<div class="containerfor" style="max-width: 650px; min-width: 400px;">
+  <div class="card">
+    <div class="card-body">
+      <form id="myForm" onsubmit="returnvalidar()">
+        <div class="formestu">
+          <legend>Datos del estudiante</legend>
+          <label for="user">Nombre:</label>
+          <input type="text" class="form-control" id="user" placeholder="Nombre completo">
+          <label for="email">Correo Electronico:</label>
+          <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+          <label for="Pass1">Contraseña:</label>
+          <input type="password" class="form-control" id="pass1" placeholder="Contraseña">
+          <label for="pass2">Rep. Contraseña:</label>
+          <input type="password" class="form-control" id="pass2" placeholder="Repetir Contraseña">
+          <label for="codipos">Código Postal:</label>
+          <input type="text" class="form-control" id="codipos" placeholder="Codigo Postal">
+        </div>
+        <div class="form-group">
+          <legend>Datos Personales</legend>
+          <label for="sexo">Sexo:</label>
+          <input type="radio" id="sexo" name="sexo"> Masculino
+          <input type="radio" id="sexo" name="sexo"> Femenino <br>
+          <label for="ciudad">Ciudad:</label>      
+            <select class="form-control" id="ciudad">
+              <option value="Cali">Seleccionar</option>
+              <option value="Cali">Cali</option>
+              <option value="Yumbo">Yumbo</option>
+              <option value="Jamundí">Jamundí</option>
+            </select>      
+          <label for="terminos">Legalidades:</label>
+          <input type="checkbox" id="terminos"> Acepto los términos y condiciones          
+        </div>
+        <input type="submit" class="btn btn-success" id="boton" value="Registrar">
+        <input type="reset" class="btn btn-danger" id="boton" value="Reiniciar">
+      </form>
+      <br>
+    </div>
+  </div>
+</div>                                                
+            </div>
+        </div>
+    </form>
+</div>
+     </div>
+        </div>                 
+            </div>
+                </div>
+                    </div>
+                </div>
+            </div>     
+          </section>
+    </main>
+    <footer>
+        <span>Alcaldía de Santiago de Cali - Secretaría de Educación<br></span>
+        <u>
+            <a style="color: #fff; " href="https://www.cali.gov.co/informatica/publicaciones/1344/polticas_seguridad_de_la_informacin/" target="_blank" title="Alcaldía de Santiago de Cali">Políticas de seguridad de la información y protección de datos personales</a>
+        </u>
+        <br>
+        <span>Todos los Derechos Reservados © 2020</span>
+    </footer>
+    <script src="menu.js"></script
+</body>
+</html>

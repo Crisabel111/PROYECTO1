@@ -77,7 +77,6 @@ img {
     margin-left: 10px;
     display: block;
     position: relative;
-    background: #088542;
 }
 .container .nav-header {
     margin-right: 15px;
@@ -203,15 +202,28 @@ label {
     color: #fff;
     margin: 0px 0px 0px 5px;
     border-radius: 4px;
-    border-bottom-style: none;
-    border-style:none ;
+    border-bottom-style: none; 
     display: inline-block;
 }
 .mostrar {
     margin-top: 0;
 }
+/* Estilo del formulario */
+  
 
-
+label for {
+    display: block; 
+    float: center; 
+}
+.card-body {
+    display:inline-block;
+    flex-direction:column;
+    align-items: initial;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
 
 @media(min-width:789px) {
 .iconmenu { 
@@ -346,4 +358,13 @@ label {
     border-radius: 4px;
     border-bottom-style: none;
     border-style:none ;
+}
+
+.card-body {
+    display:inline-block;
+    flex-direction:column;
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
 }}
+        
